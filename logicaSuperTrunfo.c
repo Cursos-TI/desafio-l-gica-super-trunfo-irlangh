@@ -76,7 +76,7 @@ int main(){
     pib_per_capita1 = pib1c / (float) populacao1;
     pib_per_capita2 = pib2c / (float) populacao2;
 
-    // Menu interativo
+    // Menu interativo, usuario escolhe o atributo que quer comparar
     int opcao;
     printf("\nEscolha o atributo para comparar:\n");
     printf("1 - População\n");
@@ -91,6 +91,7 @@ int main(){
     printf("Cidade 1: %s\n", cidade1);
     printf("Cidade 2: %s\n", cidade2);
 
+    //uso do Switch para comparar e apresentar os atributos escolhidos
     switch(opcao){
         case 1:
             printf("Atributo: População\n");
